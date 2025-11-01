@@ -4,8 +4,8 @@
 
 ## Plan Alignment
 - **Development Plan task:** #12 – Dynamic base-year handling.
-- **Dependencies:** Shared data ingestion & calculation services ([Shared App Foundation](./shared_app_foundation.md)), scenario persistence & auth ([Authentication & Account Persistence](./authentication_account_persistence.md); [Scenario Persistence Controls](./scenario_persistence_controls.md)), guided flow UX ([Guided Model Flow](./guided_model_flow.md)), and performance guardrails ([Performance & Accessibility Standards](./performance_accessibility_standards.md)).
-- **Downstream impact:** BTC, Macro, micro, and nation-state models; onboarding wizard; home dashboard; charts and KPI cards; live price integration (task #13).
+- **Dependencies:** Shared data ingestion & calculation services ([Shared App Foundation](./shared_app_foundation.md)), scenario persistence & auth ([Authentication & Account Persistence](./authentication_account_persistence.md); [Scenario Persistence Controls](./scenario_persistence_controls.md)), guided flow UX ([Guided Model Flow](./guided_model_flow.md)), live price onboarding experience ([Live Price Onboarding Integration](./live_price_onboarding_integration.md)), and performance guardrails ([Performance & Accessibility Standards](./performance_accessibility_standards.md)).
+- **Downstream impact:** BTC, Macro, micro, and nation-state models; onboarding wizard; home dashboard; charts and KPI cards; live price integration ([External BTC Price Ingestion](./external_btc_price_ingestion.md); [Live Price Onboarding Integration](./live_price_onboarding_integration.md)).
 
 ## Objectives
 1. Replace the static 2025 assumption grid with a time-aware price backbone anchored to the latest historical BTC close.

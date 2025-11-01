@@ -1,5 +1,10 @@
 # Shared Theming and Motion Framework Plan
 
+[Back to README](../README.md) • [Development Plan](./development_plan.md)
+
+## Plan Alignment
+This plan addresses tasks **2** and **21** from the [Development Plan](./development_plan.md), detailing the implementation approach for the design tokens, motion presets, and shared UI building blocks referenced across subsequent feature work.
+
 This document describes how to implement the shared theming layer and motion framework for the Bitcoin Model web application. The goal is to ensure a cohesive look-and-feel, consistent animations, and responsive layouts across all screens described in the product plan.
 
 ## Objectives
@@ -72,6 +77,7 @@ This document describes how to implement the shared theming layer and motion fra
     - Document component usage in Storybook with example states for light/dark themes.
     - Provide a theming guide in `docs/design_system.md` referencing this framework for contributors.
     - Coordinate with the architectural plan in [docs/shared_app_foundation.md](./shared_app_foundation.md) so UI tokens and motion utilities integrate cleanly with the shared monorepo structure.
+    - Align component styling for the authenticated hub with the [User Home Page Implementation Blueprint](./user_home_page.md).
     - Set up linting rules (Stylelint/ESLint) to enforce naming conventions and consistent utility usage.
 
 ## Deliverables

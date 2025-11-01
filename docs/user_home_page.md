@@ -7,6 +7,8 @@ This blueprint fulfills task **8** of the [Development Plan](./development_plan.
 
 This document translates task 8 of the roadmap—"Create user Home page"—into an actionable implementation plan. It aligns with the design direction, theming, motion, and flow guides already established for the Bitcoin Model web app.
 
+Scenario management interactions on the Home experience should follow the patterns defined in the [Scenario Persistence Controls](./scenario_persistence_controls.md) blueprint, while live pricing banners and status affordances rely on the [External BTC Price Ingestion](./external_btc_price_ingestion.md), [Dynamic Base-Year Handling](./dynamic_base_year_handling.md), and [Live Price Onboarding Integration](./live_price_onboarding_integration.md) plans.
+
 ## 1. Objectives & Success Criteria
 - Deliver a personalized, data-rich landing experience immediately after onboarding or sign-in.
 - Provide clear navigation into the guided BTC → Macro → Model flow while still supporting free exploration.
@@ -69,7 +71,7 @@ This document translates task 8 of the roadmap—"Create user Home page"—into 
 
 ## 10. Dependencies & References
 - Visual/motion specs: [Design System & Tech Stack](./design_system.md) and [Theming & Motion Framework](./theming_motion_framework.md).
-- Flow behaviors: [Flow-Specific UX Interactions Blueprint](./flow_specific_ux_interactions.md) and [Onboarding Wizard Blueprint](./onboarding_wizard.md).
+- Flow behaviors: [Flow-Specific UX Interactions Blueprint](./flow_specific_ux_interactions.md), [Guided Flow Blueprint](./guided_model_flow.md), and [Onboarding Wizard Blueprint](./onboarding_wizard.md).
 - Architecture & data: [Shared App Foundation Blueprint](./shared_app_foundation.md) and [Authentication & Account Persistence](./authentication_account_persistence.md).
 - Performance guardrails: [Performance & Accessibility Standards](./performance_accessibility_standards.md).
 

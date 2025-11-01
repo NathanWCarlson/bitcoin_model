@@ -60,6 +60,24 @@ Bitcoin24 does not model Bitcoin's volatility, as its volatility profile has evo
     <th>Triple Maxi</th>
   </tr>
 </table>
+## Development Documentation
+- [docs/development_plan.md](docs/development_plan.md) – master roadmap for every initiative.
+  - [docs/design_system.md](docs/design_system.md) – design system and core tech stack (tasks 1 & 21).
+  - [docs/theming_motion_framework.md](docs/theming_motion_framework.md) – shared theming and motion implementation (tasks 2 & 21).
+  - [docs/flow_specific_ux_interactions.md](docs/flow_specific_ux_interactions.md) – onboarding, navigation, and validation behaviors (tasks 3, 10, 14, 22).
+  - [docs/performance_accessibility_standards.md](docs/performance_accessibility_standards.md) – performance, accessibility, and observability guardrails (task 4).
+  - [docs/shared_app_foundation.md](docs/shared_app_foundation.md) – architectural blueprint for services, data ingestion, and tooling (task 5).
+  - [docs/authentication_account_persistence.md](docs/authentication_account_persistence.md) – authentication and scenario persistence (tasks 6 & 11).
+  - [docs/scenario_persistence_controls.md](docs/scenario_persistence_controls.md) – scenario save/load UX, APIs, and revision handling (task 11).
+  - [docs/dynamic_base_year_handling.md](docs/dynamic_base_year_handling.md) – dynamic base-year calculations and historical pricing backbone (task 12).
+  - [docs/external_btc_price_ingestion.md](docs/external_btc_price_ingestion.md) – external price feed ingestion and distribution (task 13).
+  - [docs/onboarding_wizard.md](docs/onboarding_wizard.md) – Get Started flow implementation (task 7).
+  - [docs/live_price_onboarding_integration.md](docs/live_price_onboarding_integration.md) – live price selection across onboarding, home, and guided flows (task 14).
+  - [docs/macro_model_screen.md](docs/macro_model_screen.md) – macro modeling UI blueprint (task 15).
+  - [docs/user_home_page.md](docs/user_home_page.md) – authenticated dashboard experience (task 8).
+  - [docs/route_guarding_navigation.md](docs/route_guarding_navigation.md) – protected routing and global navigation (task 9).
+  - [docs/guided_model_flow.md](docs/guided_model_flow.md) – guided BTC → Macro → model experience (task 10).
+
 
 
 >Disclaimer:  The information provided here is for general informational purposes only and should not be considered financial advice. It contains forward-looking information that is inherently unknowable. You should seek advice from a professional financial advisor and other trusted sources before acting on any of this information. The authors and publishers of this information disclaim responsibility for any action taken by users of this information.  This is but one view of potential outcomes. You should inform yourself of other views, including those that might disagree.

@@ -20,9 +20,9 @@ This document is the authoritative roadmap for implementing the Bitcoin24 web ap
 | 10 | Guided BTC → Macro → model flow | Surface step indicators, auto-save, and navigation cues across modeling screens. | ✅ Completed – guided flow blueprint published. | [Guided Flow Blueprint](./guided_model_flow.md) |
 | 11 | Scenario persistence controls | Provide save/load/duplicate functionality tied to user accounts. | ✅ Completed – blueprint documented. | [Scenario Persistence Controls](./scenario_persistence_controls.md) |
 | 12 | Dynamic base-year handling | Shift projections to use the latest historical BTC data instead of static 2025 assumptions. | ✅ Completed – engineering spec documented. | [Dynamic Base-Year Handling](./dynamic_base_year_handling.md) |
-| 13 | External BTC price ingestion | Fetch daily prices, persist them, and expose defaults to the UI. | ⏳ Pending – engineering spec required. | (Upcoming engineering spec) |
-| 14 | Live price onboarding integration | Let users accept live prices or choose alternatives during onboarding and in models. | ⏳ Pending – ties into onboarding implementation. | [Onboarding Wizard Blueprint](./onboarding_wizard.md) |
-| 15 | Macro model screen | Implement controls, tables, charts, and collapsible calculations for the macro layer. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
+| 13 | External BTC price ingestion | Fetch daily prices, persist them, and expose defaults to the UI. | ✅ Completed – ingestion blueprint documented. | [External BTC Price Ingestion](./external_btc_price_ingestion.md) |
+| 14 | Live price onboarding integration | Let users accept live prices or choose alternatives during onboarding and in models. | ✅ Completed – integration blueprint published. | [Live Price Onboarding Integration](./live_price_onboarding_integration.md) |
+| 15 | Macro model screen | Implement controls, tables, charts, and collapsible calculations for the macro layer. | ✅ Completed – blueprint documented. | [Macro Model Screen Blueprint](./macro_model_screen.md) |
 | 16 | BTC model screen | Build scenario presets, yearly outputs, KPIs, and charts for the BTC sheet. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
 | 17 | Individual micro model screen | Translate individual strategy table, forecasts, comparisons, and charts. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
 | 18 | Corporate micro model screen | Deliver treasury strategy inputs, results tables, and visualization suite. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
@@ -31,7 +31,7 @@ This document is the authoritative roadmap for implementing the Bitcoin24 web ap
 | 21 | Shared UI component library | Extract reusable cards, tables, collapsibles, and chart wrappers. | ⏳ Pending – to follow core screen builds. | [Theming & Motion Framework](./theming_motion_framework.md) |
 | 22 | Validation, guidance, & analytics | Enforce input rules, contextual help, and telemetry across the app. | ⏳ Pending – to be implemented after core flows. | [Flow-Specific UX Interactions](./flow_specific_ux_interactions.md) |
 
-**Note:** Items marked "Upcoming" will receive dedicated implementation briefs as the project advances. Until then, use this
+> **Note:** Items marked "Upcoming" will receive dedicated implementation briefs as the project advances. Until then, use this
 table to track sequencing, dependencies, and ownership discussions.
 
 ## Milestone Groupings

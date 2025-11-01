@@ -1,5 +1,10 @@
 # Bitcoin Model Web App – Design System & Tech Stack
 
+[Back to README](../README.md) • [Development Plan](./development_plan.md)
+
+## Plan Alignment
+This guide fulfills task **1** of the [Development Plan](./development_plan.md) and establishes visual precedents referenced by the shared component initiative (task **21**).
+
 ## 1. UX Vision
 - **Inspiration:** Mirror the sleek, dark-mode aesthetic of Microstrategist with high-contrast typography, glassmorphism cards, and cinematic hero imagery.
 - **Tone:** Professional, data-forward, and trustworthy while remaining approachable for power users and newcomers.

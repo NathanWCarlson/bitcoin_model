@@ -8,7 +8,7 @@
   - Authenticated access & navigation shell ([Route Guarding & Navigation](./route_guarding_navigation.md)).
   - Scenario persistence foundations ([Authentication & Account Persistence](./authentication_account_persistence.md)) and save/load UX ([Scenario Persistence Controls](./scenario_persistence_controls.md)).
   - Onboarding completion state & user home selection ([Onboarding Wizard Blueprint](./onboarding_wizard.md), [User Home Page Blueprint](./user_home_page.md)).
-- **Downstream consumers:** BTC, Macro, and all micro/nation modeling screens rely on this framework for sequencing, status hand-offs, and auto-save cues.
+- **Downstream consumers:** BTC, Macro, and all micro/nation modeling screens rely on this framework for sequencing, status hand-offs, and auto-save cues; reference the [Macro Model Screen Blueprint](./macro_model_screen.md) for detailed Step 2 implementation requirements.
 
 ## 1. Goals & Experience Principles
 1. **Clarity** – make it obvious what step the user is on, what is required next, and how prior assumptions carry forward.
@@ -27,7 +27,7 @@
 ## 3. Non-Goals
 - Detailed form fields within each modeling screen (covered by forthcoming BTC/Macro/model UI specs).
 - Scenario comparison visualizations (handled in the specific screen blueprints).
-- Implementation of live pricing selection (see [Flow-Specific UX Interactions](./flow_specific_ux_interactions.md) and upcoming pricing specs).
+- Implementation of live pricing selection (see [Flow-Specific UX Interactions](./flow_specific_ux_interactions.md) and [Live Price Onboarding Integration](./live_price_onboarding_integration.md)).
 
 ## 4. User Journeys
 ### 4.1 First-time signed-in user

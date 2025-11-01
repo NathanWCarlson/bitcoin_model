@@ -3,12 +3,11 @@
 [Back to README](../README.md) • [Development Plan](./development_plan.md)
 
 ## Plan Alignment
-This blueprint informs tasks **3**, **10**, **12**, **14**, and **22** from the [Development Plan](./development_plan.md), ensuring the onboarding, guided model progression, dynamic pricing interactions, live price decisions, and validation/help strategies deliver a coherent user journey.
+This blueprint informs tasks **3**, **10**, **12**, **13**, **14**, and **22** from the [Development Plan](./development_plan.md), ensuring the onboarding, guided model progression, dynamic pricing interactions, live price decisions, and validation/help strategies deliver a coherent user journey.
 
-This guide translates the onboarding, home, and modeling flows into detailed UX behaviors that align with the Bitcoin Model web app's design language. It supplements the overarching design system and theming/motion frameworks, and pairs with the [Route Guarding & Navigation](./route_guarding_navigation.md) blueprint for implementation specifics.
+This guide translates the onboarding, home, and modeling flows into detailed UX behaviors that align with the Bitcoin Model web app's design language. It supplements the overarching design system and theming/motion frameworks, and pairs with the [Route Guarding & Navigation](./route_guarding_navigation.md) blueprint for implementation specifics. For the price-selection journey, reference the dedicated [Live Price Onboarding Integration](./live_price_onboarding_integration.md) plan, and for macro-screen execution details consult the [Macro Model Screen Blueprint](./macro_model_screen.md).
 
-Persistence interactions described here should adhere to the save/load patterns codified in the [Scenario Persistence Controls](./scenario_persistence_controls.md) plan and stay synchronized with the base-year behavior defined in the [Dynamic Base-Year Handling](./dynamic_base_year_handling.md) specification.
-This guide translates the onboarding, home, and modeling flows into detailed UX behaviors that align with the Bitcoin Model web app's design language. It supplements the overarching design system and theming/motion frameworks.
+Persistence interactions described here should adhere to the save/load patterns codified in the [Scenario Persistence Controls](./scenario_persistence_controls.md) plan and stay synchronized with the base-year behavior defined in the [Dynamic Base-Year Handling](./dynamic_base_year_handling.md) specification and the live pricing pipeline outlined in the [External BTC Price Ingestion](./external_btc_price_ingestion.md) blueprint.
 
 ## 1. Cover Screen & Entry CTA
 - **Hero Treatment:** Full-bleed dark gradient with animated particle backdrop and centered copy highlighting the product promise.
@@ -76,4 +75,4 @@ This guide translates the onboarding, home, and modeling flows into detailed UX 
 - Determine whether to integrate an interactive tutorial overlay for first-time users.
 - Align analytics events with UX milestones (onboarding completion, scenario save, price selection).
 
-Refer back to the [Design System & Tech Stack](./design_system.md), [Shared App Foundation Blueprint](./shared_app_foundation.md), [Authentication & Account Persistence Blueprint](./authentication_account_persistence.md), and [Theming & Motion Framework](./theming_motion_framework.md) documents, along with the dedicated [Onboarding Wizard Implementation Blueprint](./onboarding_wizard.md), for visual, architectural, and implementation guardrails that complement this flow blueprint.
+Refer back to the [Design System & Tech Stack](./design_system.md), [Shared App Foundation Blueprint](./shared_app_foundation.md), [Authentication & Account Persistence Blueprint](./authentication_account_persistence.md), and [Theming & Motion Framework](./theming_motion_framework.md) documents, along with the dedicated [Onboarding Wizard Implementation Blueprint](./onboarding_wizard.md), [User Home Page Implementation Blueprint](./user_home_page.md), and [Guided Flow Blueprint](./guided_model_flow.md) for visual, architectural, and implementation guardrails that complement this flow blueprint.
