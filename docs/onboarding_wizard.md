@@ -9,6 +9,8 @@ This document details how to implement the "Get Started" onboarding wizard that 
 
 Scenario creation and persistence responsibilities referenced here should follow the API and UX patterns described in the [Scenario Persistence Controls](./scenario_persistence_controls.md) blueprint.
 
+This document details how to implement the "Get Started" onboarding wizard that shepherds new and returning users from the cover screen through account creation and into the authenticated home experience. It extends the flow behaviors defined in [docs/flow_specific_ux_interactions.md](./flow_specific_ux_interactions.md) and leverages the visual and technical foundations captured in the [design system](./design_system.md) and [theming & motion framework](./theming_motion_framework.md).
+
 ## 1. Goals & Non-Goals
 - **Goals**
   - Provide a polished, low-friction account creation/sign-in experience that mirrors the Microstrategist-inspired aesthetic.
@@ -84,4 +86,4 @@ Scenario creation and persistence responsibilities referenced here should follow
 - Decide if wizard should be skippable for returning signed-in users (default assumption: skip if session is valid).
 - Coordinate launch sequence with marketing assets on Cover screen.
 
-Refer to the broader blueprints for [authentication](./authentication_account_persistence.md), [shared foundation](./shared_app_foundation.md), [UX flows](./flow_specific_ux_interactions.md), [guided modeling sequence](./guided_model_flow.md), [performance standards](./performance_accessibility_standards.md), and the complementary [User Home Page Implementation Blueprint](./user_home_page.md) to ensure implementation remains aligned across architecture, experience, and quality guardrails.
+Refer to the broader blueprints for [authentication](./authentication_account_persistence.md), [shared foundation](./shared_app_foundation.md), [UX flows](./flow_specific_ux_interactions.md), and [performance standards](./performance_accessibility_standards.md) to ensure implementation remains aligned across architecture, experience, and quality guardrails.

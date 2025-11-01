@@ -31,7 +31,7 @@ This document is the authoritative roadmap for implementing the Bitcoin24 web ap
 | 21 | Shared UI component library | Extract reusable cards, tables, collapsibles, and chart wrappers. | ⏳ Pending – to follow core screen builds. | [Theming & Motion Framework](./theming_motion_framework.md) |
 | 22 | Validation, guidance, & analytics | Enforce input rules, contextual help, and telemetry across the app. | ⏳ Pending – to be implemented after core flows. | [Flow-Specific UX Interactions](./flow_specific_ux_interactions.md) |
 
-> **Note:** Items marked "Upcoming" will receive dedicated implementation briefs as the project advances. Until then, use this
+**Note:** Items marked "Upcoming" will receive dedicated implementation briefs as the project advances. Until then, use this
 table to track sequencing, dependencies, and ownership discussions.
 
 ## Milestone Groupings

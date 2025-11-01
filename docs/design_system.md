@@ -1,10 +1,5 @@
 # Bitcoin Model Web App – Design System & Tech Stack
 
-[Back to README](../README.md) • [Development Plan](./development_plan.md)
-
-## Plan Alignment
-This guide fulfills task **1** of the [Development Plan](./development_plan.md) and establishes visual precedents referenced by the shared component initiative (task **21**).
-
 ## 1. UX Vision
 - **Inspiration:** Mirror the sleek, dark-mode aesthetic of Microstrategist with high-contrast typography, glassmorphism cards, and cinematic hero imagery.
 - **Tone:** Professional, data-forward, and trustworthy while remaining approachable for power users and newcomers.
@@ -82,13 +77,6 @@ Include light-theme variants for accessibility, but default to dark.
 - **Design:** Figma library capturing tokens, components, and interaction specs.
 - **Documentation:** Storybook for interactive component gallery; Docusaurus for developer docs.
 - **Analytics & Monitoring:** Vercel Analytics + Sentry for frontend; OpenTelemetry for backend metrics.
-- **Implementation Guide:** Refer to [docs/theming_motion_framework.md](./theming_motion_framework.md) for concrete Tailwind configuration steps, motion presets, and responsive layout utilities derived from this design system.
-- **Flow Behaviors:** Consult [docs/flow_specific_ux_interactions.md](./flow_specific_ux_interactions.md) for onboarding, navigation, and scenario-flow UX patterns that complement these visual foundations.
-- **Onboarding Wizard:** Pair the flow guidance with [docs/onboarding_wizard.md](./onboarding_wizard.md) for implementation details on the Get Started journey and price selection step.
-- **Architecture & Data Layer:** Pair this guide with [docs/shared_app_foundation.md](./shared_app_foundation.md) to understand how the monorepo, services, and calculation engine operationalize the design vision.
-- **Authentication & Persistence:** Coordinate with [docs/authentication_account_persistence.md](./authentication_account_persistence.md) so account flows and saved scenarios mirror the visual language and UX expectations set here.
-- **Home Experience:** Reference the [User Home Page Implementation Blueprint](./user_home_page.md) for detailed layout, interaction, and performance goals of the authenticated landing hub.
-- **Performance & Accessibility:** Follow [docs/performance_accessibility_standards.md](./performance_accessibility_standards.md) to uphold the speed, inclusivity, and observability targets that make the experience feel polished in practice.
 
 ## 7. Success Metrics
 - LCP < 2s on mid-tier devices, CLS < 0.1, accessibility score ≥ 95.

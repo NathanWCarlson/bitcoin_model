@@ -1,13 +1,6 @@
 # Authentication & Account Persistence Blueprint
 
-[Back to README](../README.md) • [Development Plan](./development_plan.md)
-
-## Plan Alignment
-This blueprint spans tasks **6** and **11** of the [Development Plan](./development_plan.md), covering the authentication stack and scenario persistence controls required throughout the product.
-
-Detailed save/load UX, revision management, and cross-screen behaviors are further elaborated in the [Scenario Persistence Controls](./scenario_persistence_controls.md) guide.
-
-This document operationalizes the "Implement basic username/password auth" task. It details the back-end modules, database schema, session strategy, front-end UX expectations, and quality guardrails required to deliver secure sign-up/login and scenario persistence for the Bitcoin24 web application, and it underpins the guard behaviors specified in the [Route Guarding & Navigation](./route_guarding_navigation.md) guide.
+This document operationalizes the "Implement basic username/password auth" task. It details the back-end modules, database schema, session strategy, front-end UX expectations, and quality guardrails required to deliver secure sign-up/login and scenario persistence for the Bitcoin24 web application.
 
 ## 1. Goals & Principles
 - **Security first:** Hash passwords with Argon2id, enforce strong entropy requirements, and ship with rate limiting + anomaly detection.
@@ -102,4 +95,3 @@ This document operationalizes the "Implement basic username/password auth" task.
 - Performance & compliance guardrails: [Performance & Accessibility Standards](./performance_accessibility_standards.md)
 - Theming/motion integration for auth forms: [Shared Theming & Motion Framework](./theming_motion_framework.md)
 - Wizard-specific implementation details: [Onboarding Wizard Implementation Blueprint](./onboarding_wizard.md)
-- Post-login experience: [User Home Page Implementation Blueprint](./user_home_page.md)
