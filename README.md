@@ -11,6 +11,10 @@ Helping you drive Bitcoin adoption.
     <th>Triple Maxi</th>
   </tr>
 </table>
+## Web App Design Direction
+- Refer to [docs/design_system.md](docs/design_system.md) for the planned design system, core tech stack, and performance guardrails for the forthcoming web experience.
+- The document captures palette, typography, motion, accessibility targets, and infrastructure/tooling choices inspired by Microstrategist.
+
 
 Bitcoin24 is designed to simulate 21-year outcomes of various Bitcoin strategies tailored for individuals, corporations, institutions, and nation-states. Users can input their own assumptions or adjust the model to explore different scenarios. Saving the file will automatically update the scenario comparison charts in the micro models' bottom section.
 
