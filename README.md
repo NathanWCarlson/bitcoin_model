@@ -14,12 +14,6 @@ Helping you drive Bitcoin adoption.
 ## Web App Design Direction
 - Refer to [docs/design_system.md](docs/design_system.md) for the planned design system, core tech stack, and performance guardrails for the forthcoming web experience.
 - The document captures palette, typography, motion, accessibility targets, and infrastructure/tooling choices inspired by Microstrategist.
-- Review [docs/shared_app_foundation.md](docs/shared_app_foundation.md) for the architectural blueprint that translates workbook logic into a shared codebase, services, and data pipelines.
-- Consult [docs/theming_motion_framework.md](docs/theming_motion_framework.md) for implementation details on Tailwind theming, CSS variables, Framer Motion presets, and responsive layout utilities that bring the design system to life.
-- Review [docs/flow_specific_ux_interactions.md](docs/flow_specific_ux_interactions.md) for detailed onboarding, navigation, and model-flow UX behaviors derived from the design vision.
-- Enforce performance, accessibility, and observability standards described in [docs/performance_accessibility_standards.md](docs/performance_accessibility_standards.md) to keep the experience fast, inclusive, and reliable.
-- Implement secure account creation, login, and scenario persistence following [docs/authentication_account_persistence.md](docs/authentication_account_persistence.md).
-- Build the Get Started onboarding wizard according to [docs/onboarding_wizard.md](docs/onboarding_wizard.md) so the cover CTA, auth flow, and pricing selection stay aligned.
 
 
 Bitcoin24 is designed to simulate 21-year outcomes of various Bitcoin strategies tailored for individuals, corporations, institutions, and nation-states. Users can input their own assumptions or adjust the model to explore different scenarios. Saving the file will automatically update the scenario comparison charts in the micro models' bottom section.
