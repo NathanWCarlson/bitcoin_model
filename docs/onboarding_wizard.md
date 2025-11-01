@@ -1,10 +1,5 @@
 # Onboarding Wizard Implementation Blueprint
 
-[Back to README](../README.md) • [Development Plan](./development_plan.md)
-
-## Plan Alignment
-This blueprint supports tasks **7** and **14** of the [Development Plan](./development_plan.md), guiding the onboarding journey and live price selection that bridge the cover screen and authenticated experience.
-
 This document details how to implement the "Get Started" onboarding wizard that shepherds new and returning users from the cover screen through account creation and into the authenticated home experience. It extends the flow behaviors defined in [docs/flow_specific_ux_interactions.md](./flow_specific_ux_interactions.md) and leverages the visual and technical foundations captured in the [design system](./design_system.md) and [theming & motion framework](./theming_motion_framework.md).
 
 ## 1. Goals & Non-Goals
@@ -82,4 +77,4 @@ This document details how to implement the "Get Started" onboarding wizard that 
 - Decide if wizard should be skippable for returning signed-in users (default assumption: skip if session is valid).
 - Coordinate launch sequence with marketing assets on Cover screen.
 
-Refer to the broader blueprints for [authentication](./authentication_account_persistence.md), [shared foundation](./shared_app_foundation.md), [UX flows](./flow_specific_ux_interactions.md), [performance standards](./performance_accessibility_standards.md), and the complementary [User Home Page Implementation Blueprint](./user_home_page.md) to ensure implementation remains aligned across architecture, experience, and quality guardrails.
+Refer to the broader blueprints for [authentication](./authentication_account_persistence.md), [shared foundation](./shared_app_foundation.md), [UX flows](./flow_specific_ux_interactions.md), and [performance standards](./performance_accessibility_standards.md) to ensure implementation remains aligned across architecture, experience, and quality guardrails.

@@ -1,10 +1,5 @@
 # Flow-Specific UX Interactions & Navigation Blueprint
 
-[Back to README](../README.md) • [Development Plan](./development_plan.md)
-
-## Plan Alignment
-This blueprint informs tasks **3**, **10**, **14**, and **22** from the [Development Plan](./development_plan.md), ensuring the onboarding, guided model progression, live price decisions, and validation/help strategies deliver a coherent user journey.
-
 This guide translates the onboarding, home, and modeling flows into detailed UX behaviors that align with the Bitcoin Model web app's design language. It supplements the overarching design system and theming/motion frameworks.
 
 ## 1. Cover Screen & Entry CTA
@@ -73,4 +68,4 @@ This guide translates the onboarding, home, and modeling flows into detailed UX 
 - Determine whether to integrate an interactive tutorial overlay for first-time users.
 - Align analytics events with UX milestones (onboarding completion, scenario save, price selection).
 
-Refer back to the [Design System & Tech Stack](./design_system.md), [Shared App Foundation Blueprint](./shared_app_foundation.md), [Authentication & Account Persistence Blueprint](./authentication_account_persistence.md), and [Theming & Motion Framework](./theming_motion_framework.md) documents, along with the dedicated [Onboarding Wizard Implementation Blueprint](./onboarding_wizard.md) and [User Home Page Implementation Blueprint](./user_home_page.md), for visual, architectural, and implementation guardrails that complement this flow blueprint.
+Refer back to the [Design System & Tech Stack](./design_system.md), [Shared App Foundation Blueprint](./shared_app_foundation.md), [Authentication & Account Persistence Blueprint](./authentication_account_persistence.md), and [Theming & Motion Framework](./theming_motion_framework.md) documents, along with the dedicated [Onboarding Wizard Implementation Blueprint](./onboarding_wizard.md), for visual, architectural, and implementation guardrails that complement this flow blueprint.

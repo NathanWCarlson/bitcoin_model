@@ -11,16 +11,9 @@ Helping you drive Bitcoin adoption.
     <th>Triple Maxi</th>
   </tr>
 </table>
-## Development Documentation
-- [docs/development_plan.md](docs/development_plan.md) – master roadmap for every initiative.
-  - [docs/design_system.md](docs/design_system.md) – design system and core tech stack (tasks 1 & 21).
-  - [docs/theming_motion_framework.md](docs/theming_motion_framework.md) – shared theming and motion implementation (tasks 2 & 21).
-  - [docs/flow_specific_ux_interactions.md](docs/flow_specific_ux_interactions.md) – onboarding, navigation, and validation behaviors (tasks 3, 10, 14, 22).
-  - [docs/performance_accessibility_standards.md](docs/performance_accessibility_standards.md) – performance, accessibility, and observability guardrails (task 4).
-  - [docs/shared_app_foundation.md](docs/shared_app_foundation.md) – architectural blueprint for services, data ingestion, and tooling (task 5).
-  - [docs/authentication_account_persistence.md](docs/authentication_account_persistence.md) – authentication and scenario persistence (tasks 6 & 11).
-  - [docs/onboarding_wizard.md](docs/onboarding_wizard.md) – Get Started flow implementation (tasks 7 & 14).
-  - [docs/user_home_page.md](docs/user_home_page.md) – authenticated dashboard experience (task 8).
+## Web App Design Direction
+- Refer to [docs/design_system.md](docs/design_system.md) for the planned design system, core tech stack, and performance guardrails for the forthcoming web experience.
+- The document captures palette, typography, motion, accessibility targets, and infrastructure/tooling choices inspired by Microstrategist.
 
 
 Bitcoin24 is designed to simulate 21-year outcomes of various Bitcoin strategies tailored for individuals, corporations, institutions, and nation-states. Users can input their own assumptions or adjust the model to explore different scenarios. Saving the file will automatically update the scenario comparison charts in the micro models' bottom section.

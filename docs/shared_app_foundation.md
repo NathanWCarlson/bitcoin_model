@@ -1,10 +1,5 @@
 # Shared Application Foundation Blueprint
 
-[Back to README](../README.md) • [Development Plan](./development_plan.md)
-
-## Plan Alignment
-This blueprint corresponds to task **5** of the [Development Plan](./development_plan.md), establishing the repository structure, data ingestion, and service architecture that underpin all subsequent milestones.
-
 This document translates the "Set up shared app foundation" task into a concrete implementation roadmap. It focuses on scaffolding the codebase, ingesting workbook data, reproducing Excel logic, and preparing persistence/state layers that power every screen in the Bitcoin24 web app.
 
 ## 1. Repository Structure & Tooling
@@ -71,4 +66,4 @@ This document translates the "Set up shared app foundation" task into a concrete
 - API endpoints achieve p95 latency < 300ms under load test of 50 RPS.
 - End-to-end smoke test (create account → load BTC model) passes in CI within 5 minutes.
 
-This foundation ensures that subsequent tasks—auth, onboarding flows, dynamic pricing, and model screens—build atop a stable, well-tested core mirroring the original workbook logic. Pair these architectural steps with the [Design System & Tech Stack](./design_system.md), [Theming & Motion Framework](./theming_motion_framework.md), [Flow-Specific UX Interactions](./flow_specific_ux_interactions.md), [Authentication & Account Persistence Blueprint](./authentication_account_persistence.md), and [Performance & Accessibility Standards](./performance_accessibility_standards.md) documents—along with the [Onboarding Wizard Implementation Blueprint](./onboarding_wizard.md) and [User Home Page Implementation Blueprint](./user_home_page.md)—to deliver a cohesive product.
+This foundation ensures that subsequent tasks—auth, onboarding flows, dynamic pricing, and model screens—build atop a stable, well-tested core mirroring the original workbook logic. Pair these architectural steps with the [Design System & Tech Stack](./design_system.md), [Theming & Motion Framework](./theming_motion_framework.md), [Flow-Specific UX Interactions](./flow_specific_ux_interactions.md), [Authentication & Account Persistence Blueprint](./authentication_account_persistence.md), and [Performance & Accessibility Standards](./performance_accessibility_standards.md) documents—along with the [Onboarding Wizard Implementation Blueprint](./onboarding_wizard.md)—to deliver a cohesive product.
