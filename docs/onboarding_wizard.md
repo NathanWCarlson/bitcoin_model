@@ -1,5 +1,14 @@
 # Onboarding Wizard Implementation Blueprint
 
+[Back to README](../README.md) • [Development Plan](./development_plan.md)
+
+## Plan Alignment
+This blueprint supports tasks **7** and **14** of the [Development Plan](./development_plan.md), guiding the onboarding journey and live price selection that bridge the cover screen and authenticated experience.
+
+This document details how to implement the "Get Started" onboarding wizard that shepherds new and returning users from the cover screen through account creation and into the authenticated home experience. It extends the flow behaviors defined in [docs/flow_specific_ux_interactions.md](./flow_specific_ux_interactions.md) and leverages the visual and technical foundations captured in the [design system](./design_system.md) and [theming & motion framework](./theming_motion_framework.md).
+
+Scenario creation and persistence responsibilities referenced here should follow the API and UX patterns described in the [Scenario Persistence Controls](./scenario_persistence_controls.md) blueprint.
+
 This document details how to implement the "Get Started" onboarding wizard that shepherds new and returning users from the cover screen through account creation and into the authenticated home experience. It extends the flow behaviors defined in [docs/flow_specific_ux_interactions.md](./flow_specific_ux_interactions.md) and leverages the visual and technical foundations captured in the [design system](./design_system.md) and [theming & motion framework](./theming_motion_framework.md).
 
 ## 1. Goals & Non-Goals
@@ -16,7 +25,7 @@ This document details how to implement the "Get Started" onboarding wizard that 
 - **Route Structure**: Implement `/onboarding` as a protected public route that becomes available from the Cover page CTA. Use Next.js nested routes to render a full-screen wizard layout.
 - **State Management**: Store wizard state in a dedicated Zustand slice (`useOnboardingStore`) with persistence to `sessionStorage` so progress survives refreshes within the session. Mirror the canonical auth state managed by the shared store defined in [shared app foundation](./shared_app_foundation.md).
 - **Data Dependencies**:
-  - Fetch live BTC price via React Query using the pricing service outlined in the forthcoming dynamic base-year handling plan and the forthcoming external BTC price feed integration guide once those modules land.
+  - Fetch live BTC price via React Query using the pricing service outlined in the [Dynamic Base-Year Handling](./dynamic_base_year_handling.md) plan and the forthcoming external BTC price feed integration guide once those modules land.
   - Use MSW mocks in development/test environments to decouple the wizard from real APIs.
 - **Navigation**: On successful completion, redirect to `/home` with query flag `?onboarding=complete` for analytics.
 

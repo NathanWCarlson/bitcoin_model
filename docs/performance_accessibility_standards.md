@@ -1,6 +1,11 @@
 # Performance, Accessibility, and Quality Standards Plan
 
-This guide details how to operationalize the "snappy" experience mandate for the Bitcoin Model web application. It covers build-time and run-time optimizations, accessibility enforcement, automated quality checks, and observability so the product consistently meets the expectations set by the design system, shared app foundation, and UX flow plans.
+[Back to README](../README.md) • [Development Plan](./development_plan.md)
+
+## Plan Alignment
+This plan fulfills task **4** of the [Development Plan](./development_plan.md), defining the performance, accessibility, and observability guardrails that every subsequent delivery must satisfy.
+
+This guide details how to operationalize the "snappy" experience mandate for the Bitcoin Model web application. It covers build-time and run-time optimizations, accessibility enforcement, automated quality checks, and observability so the product consistently meets the expectations set by the design system, shared app foundation, UX flow plans, and the authenticated home experience blueprint.
 
 ## Objectives
 1. Deliver sub-2s Largest Contentful Paint (LCP) and maintain smooth interactions across target devices.

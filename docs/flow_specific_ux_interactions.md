@@ -1,5 +1,13 @@
 # Flow-Specific UX Interactions & Navigation Blueprint
 
+[Back to README](../README.md) • [Development Plan](./development_plan.md)
+
+## Plan Alignment
+This blueprint informs tasks **3**, **10**, **12**, **14**, and **22** from the [Development Plan](./development_plan.md), ensuring the onboarding, guided model progression, dynamic pricing interactions, live price decisions, and validation/help strategies deliver a coherent user journey.
+
+This guide translates the onboarding, home, and modeling flows into detailed UX behaviors that align with the Bitcoin Model web app's design language. It supplements the overarching design system and theming/motion frameworks, and pairs with the [Route Guarding & Navigation](./route_guarding_navigation.md) blueprint for implementation specifics.
+
+Persistence interactions described here should adhere to the save/load patterns codified in the [Scenario Persistence Controls](./scenario_persistence_controls.md) plan and stay synchronized with the base-year behavior defined in the [Dynamic Base-Year Handling](./dynamic_base_year_handling.md) specification.
 This guide translates the onboarding, home, and modeling flows into detailed UX behaviors that align with the Bitcoin Model web app's design language. It supplements the overarching design system and theming/motion frameworks.
 
 ## 1. Cover Screen & Entry CTA
