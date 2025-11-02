@@ -54,6 +54,7 @@ Bitcoin24 does not model Bitcoin's volatility, as its volatility profile has evo
   - [docs/theming_motion_framework.md](docs/theming_motion_framework.md) – shared theming and motion implementation (tasks 2 & 21).
   - [docs/flow_specific_ux_interactions.md](docs/flow_specific_ux_interactions.md) – onboarding, navigation, and validation behaviors (tasks 3, 10, 14, 22).
   - [docs/performance_accessibility_standards.md](docs/performance_accessibility_standards.md) – performance, accessibility, and observability guardrails (task 4).
+  - `.github/workflows/ci.yml`, `lighthouserc.json`, and `config/metrics/slo.json` – automated quality gates, Lighthouse budgets, and telemetry thresholds backing the standards.
   - [docs/shared_app_foundation.md](docs/shared_app_foundation.md) – architectural blueprint for services, data ingestion, and tooling (task 5).
   - [docs/authentication_account_persistence.md](docs/authentication_account_persistence.md) – authentication and scenario persistence (tasks 6 & 11).
   - [docs/scenario_persistence_controls.md](docs/scenario_persistence_controls.md) – scenario save/load UX, APIs, and revision handling (task 11).

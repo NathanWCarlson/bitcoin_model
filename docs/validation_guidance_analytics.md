@@ -39,7 +39,7 @@
 
 ## 6. Analytics & Telemetry Implementation
 - Define analytics schema with event names, properties, and user/session context; align with scenario persistence IDs.
-- Integrate analytics client in front end with consent management and opt-out support.
+- Integrate analytics client in front end with consent management and opt-out support. Configuration lives in `config/telemetry/analytics.json` so environments share consistent sampling rules and destinations.
 - Instrument key flows: onboarding completion, scenario save, validation errors, navigation transitions, price selection, export actions.
 - Send performance metrics (LCP, FID, TTFB) to monitoring service; align thresholds with performance standards.
 - Hook into backend services for structured logging of validation failures, API errors, and scenario persistence events.
