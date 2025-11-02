@@ -73,3 +73,29 @@ Bitcoin24 does not model Bitcoin's volatility, as its volatility profile has evo
 
 
 
+
+## Backend Services
+This repository now includes a NestJS/Fastify backend that exposes REST and GraphQL APIs backed by PostgreSQL via Prisma. Key features include:
+
+- JWT authentication with httpOnly cookies for REST and GraphQL requests.
+- Scenario CRUD APIs and GraphQL resolvers persisted to PostgreSQL (`scenarios` table).
+- BTC price ingestion stored in the `btc_prices` table, including an automated cron sync.
+- Model execution endpoint that combines scenario inputs with the latest BTC price for quick analytics.
+
+### Getting Started
+1. Copy `.env.example` to `.env` and update `DATABASE_URL`, `JWT_SECRET`, and any other environment values.
+2. Install dependencies and generate the Prisma client:
+   ```bash
+   npm install
+   npm run prisma:generate
+   ```
+3. Apply database migrations:
+   ```bash
+   npm run prisma:migrate
+   ```
+4. Start the development server:
+   ```bash
+   npm run start:dev
+   ```
+
+The REST API is served on `http://localhost:3000` and the GraphQL playground is available at `http://localhost:3000/graphql`.
