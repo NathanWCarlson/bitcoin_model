@@ -73,20 +73,28 @@ Bitcoin24 does not model Bitcoin's volatility, as its volatility profile has evo
 
 
 
-## Monorepo structure
+## Backend Services
+This repository now includes a NestJS/Fastify backend that exposes REST and GraphQL APIs backed by PostgreSQL via Prisma. Key features include:
 
-This repository is organized as a pnpm workspace powered by TurboRepo. Key packages include:
+- JWT authentication with httpOnly cookies for REST and GraphQL requests.
+- Scenario CRUD APIs and GraphQL resolvers persisted to PostgreSQL (`scenarios` table).
+- BTC price ingestion stored in the `btc_prices` table, including an automated cron sync.
+- Model execution endpoint that combines scenario inputs with the latest BTC price for quick analytics.
 
-- `apps/web` – Next.js front end consuming shared UI components and model helpers.
-- `apps/api` – Fastify service exposing scenario endpoints that mirror the workbook defaults.
-- `packages/models` – TypeScript domain library that progressively replaces workbook formulas.
-- `packages/ui` – Shared component library, styled with Tailwind CSS using the shared config.
-- `packages/config` – Centralized ESLint, Prettier, Tailwind, and TypeScript base settings.
+### Getting Started
+1. Copy `.env.example` to `.env` and update `DATABASE_URL`, `JWT_SECRET`, and any other environment values.
+2. Install dependencies and generate the Prisma client:
+   ```bash
+   npm install
+   npm run prisma:generate
+   ```
+3. Apply database migrations:
+   ```bash
+   npm run prisma:migrate
+   ```
+4. Start the development server:
+   ```bash
+   npm run start:dev
+   ```
 
-### Developer tooling
-
-- `pnpm install` bootstraps the entire workspace.
-- `pnpm dev` runs all development targets via Turbo (web + API).
-- `pnpm lint` / `pnpm test` / `pnpm build` fan out to each package.
-- Husky + lint-staged enforce formatting and lint rules on every commit.
-- Playwright, Vitest, and Jest provide e2e, component, and API test harnesses respectively.
+The REST API is served on `http://localhost:3000` and the GraphQL playground is available at `http://localhost:3000/graphql`.
