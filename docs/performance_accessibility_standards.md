@@ -40,13 +40,17 @@ This guide details how to operationalize the "snappy" experience mandate for the
 - Incorporate content checks: semantic heading hierarchy, sufficient color contrast (via Tailwind plugins), and form validation with ARIA live regions.
 
 ### 4. Continuous Quality & Observability
-- Wire GitHub Actions to run: unit tests (`pnpm test`), type checks (`pnpm typecheck`), linting, Lighthouse CI against staging builds, and Axe CLI.
+- Wire GitHub Actions to run: unit tests (`pnpm test`), type checks (`pnpm typecheck`), linting, Lighthouse CI against staging builds, and Axe CLI. See `.github/workflows/ci.yml` for the authoritative implementation; failing any gate blocks merges.
 - Capture backend metrics (API latency, error rate, job success) via OpenTelemetry exporters and visualize in Grafana dashboards.
 - Set SLOs: API P95 latency < 400ms, price ingestion job success ≥ 99%, auth success rate ≥ 99.5%.
 - Provide runbooks in the ops wiki covering incident response for degraded performance, accessibility regressions, and third-party outages.
 
 ## Deliverables
-- CI configuration enforcing performance budgets, accessibility gates, and bundle-size checks.
+- CI configuration enforcing performance budgets, accessibility gates, and bundle-size checks. Refer to:
+  - `.github/workflows/ci.yml` – orchestrates linting, type-checking, unit, Playwright, Lighthouse, Axe, and metrics guardrails.
+  - `lighthouserc.json` – codifies LCP/accessibility budgets for automated Lighthouse assertions.
+  - `config/metrics/slo.json` – stores the canonical thresholds for LCP, accessibility, and API latency used by telemetry.
+  - `scripts/check-metrics.ts` – compares captured telemetry snapshots to the published SLOs during CI.
 - Documentation for performance budgets, monitoring dashboards, and accessibility testing workflows.
 - Dashboards and alerting rules in Sentry/Vercel/Grafana with on-call notification routing.
 

@@ -1,0 +1,36 @@
+{
+  "name": "bitcoin-model",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:playwright": "playwright test",
+    "preview:static": "http-server public -p 4173 -s",
+    "audit:lighthouse": "lhci autorun --config=lighthouserc.json",
+    "audit:axe": "axe --exit 1 --tags wcag2a,wcag2aa public/index.html",
+    "metrics:check": "tsx scripts/check-metrics.ts"
+  },
+  "devDependencies": {
+    "@axe-core/cli": "4.8.2",
+    "@lhci/cli": "0.12.2",
+    "@playwright/test": "1.44.1",
+    "@typescript-eslint/eslint-plugin": "7.13.1",
+    "@typescript-eslint/parser": "7.13.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-react": "7.34.3",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-perf": "4.3.1",
+    "http-server": "14.1.1",
+    "typescript": "5.4.5",
+    "vitest": "1.6.0",
+    "tsx": "4.7.1"
+  }
+}
