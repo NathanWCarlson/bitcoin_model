@@ -3,11 +3,13 @@
 [Back to README](../README.md) • [Development Plan](./development_plan.md)
 
 ## Plan Alignment
-This blueprint supports task **7** of the [Development Plan](./development_plan.md) and works in tandem with the dedicated [Live Price Onboarding Integration](./live_price_onboarding_integration.md) guide (task **14**) to cover the full onboarding journey.
+This blueprint supports tasks **7** and **14** of the [Development Plan](./development_plan.md), guiding the onboarding journey and live price selection that bridge the cover screen and authenticated experience.
 
 This document details how to implement the "Get Started" onboarding wizard that shepherds new and returning users from the cover screen through account creation and into the authenticated home experience. It extends the flow behaviors defined in [docs/flow_specific_ux_interactions.md](./flow_specific_ux_interactions.md) and leverages the visual and technical foundations captured in the [design system](./design_system.md) and [theming & motion framework](./theming_motion_framework.md).
 
-Scenario creation and persistence responsibilities referenced here should follow the API and UX patterns described in the [Scenario Persistence Controls](./scenario_persistence_controls.md) blueprint, while live pricing dependencies align with the [External BTC Price Ingestion](./external_btc_price_ingestion.md), [Dynamic Base-Year Handling](./dynamic_base_year_handling.md), and [Live Price Onboarding Integration](./live_price_onboarding_integration.md) plans.
+Scenario creation and persistence responsibilities referenced here should follow the API and UX patterns described in the [Scenario Persistence Controls](./scenario_persistence_controls.md) blueprint.
+
+This document details how to implement the "Get Started" onboarding wizard that shepherds new and returning users from the cover screen through account creation and into the authenticated home experience. It extends the flow behaviors defined in [docs/flow_specific_ux_interactions.md](./flow_specific_ux_interactions.md) and leverages the visual and technical foundations captured in the [design system](./design_system.md) and [theming & motion framework](./theming_motion_framework.md).
 
 ## 1. Goals & Non-Goals
 - **Goals**
@@ -23,7 +25,7 @@ Scenario creation and persistence responsibilities referenced here should follow
 - **Route Structure**: Implement `/onboarding` as a protected public route that becomes available from the Cover page CTA. Use Next.js nested routes to render a full-screen wizard layout.
 - **State Management**: Store wizard state in a dedicated Zustand slice (`useOnboardingStore`) with persistence to `sessionStorage` so progress survives refreshes within the session. Mirror the canonical auth state managed by the shared store defined in [shared app foundation](./shared_app_foundation.md).
 - **Data Dependencies**:
-  - Fetch live BTC price via React Query using the pricing service outlined in the [Dynamic Base-Year Handling](./dynamic_base_year_handling.md) plan and the ingestion pipeline described in [External BTC Price Ingestion](./external_btc_price_ingestion.md).
+  - Fetch live BTC price via React Query using the pricing service outlined in the [Dynamic Base-Year Handling](./dynamic_base_year_handling.md) plan and the forthcoming external BTC price feed integration guide once those modules land.
   - Use MSW mocks in development/test environments to decouple the wizard from real APIs.
 - **Navigation**: On successful completion, redirect to `/home` with query flag `?onboarding=complete` for analytics.
 
@@ -84,4 +86,4 @@ Scenario creation and persistence responsibilities referenced here should follow
 - Decide if wizard should be skippable for returning signed-in users (default assumption: skip if session is valid).
 - Coordinate launch sequence with marketing assets on Cover screen.
 
-Refer to the broader blueprints for [authentication](./authentication_account_persistence.md), [shared foundation](./shared_app_foundation.md), [UX flows](./flow_specific_ux_interactions.md), [guided modeling sequence](./guided_model_flow.md), [performance standards](./performance_accessibility_standards.md), and the complementary [User Home Page Implementation Blueprint](./user_home_page.md) to ensure implementation remains aligned across architecture, experience, and quality guardrails.
+Refer to the broader blueprints for [authentication](./authentication_account_persistence.md), [shared foundation](./shared_app_foundation.md), [UX flows](./flow_specific_ux_interactions.md), and [performance standards](./performance_accessibility_standards.md) to ensure implementation remains aligned across architecture, experience, and quality guardrails.
