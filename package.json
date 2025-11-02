@@ -44,4 +44,19 @@
     "typescript": "^5.3.3",
     "vitest": "^1.3.1"
   }
+  "name": "bitcoin24-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "storybook": "pnpm --filter @bitcoin24/ui storybook",
+    "storybook:build": "pnpm --filter @bitcoin24/ui build-storybook"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
