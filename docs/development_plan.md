@@ -24,12 +24,12 @@ This document is the authoritative roadmap for implementing the Bitcoin24 web ap
 | 14 | Live price onboarding integration | Let users accept live prices or choose alternatives during onboarding and in models. | ✅ Completed – integration blueprint published. | [Live Price Onboarding Integration](./live_price_onboarding_integration.md) |
 | 15 | Macro model screen | Implement controls, tables, charts, and collapsible calculations for the macro layer. | ✅ Completed – blueprint documented. | [Macro Model Screen Blueprint](./macro_model_screen.md) |
 | 16 | BTC model screen | Build scenario presets, yearly outputs, KPIs, and charts for the BTC sheet. | ✅ Completed – blueprint documented. | [BTC Model Screen Blueprint](./btc_model_screen.md) |
-| 17 | Individual micro model screen | Translate individual strategy table, forecasts, comparisons, and charts. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
-| 18 | Corporate micro model screen | Deliver treasury strategy inputs, results tables, and visualization suite. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
-| 19 | Institution micro model screen | Implement portfolio assumptions, annual results, and chart trio. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
-| 20 | Nation-state model screens | Build indebted, wealthy, and US nation experiences with fiscal levers and charts. | ⏳ Pending – UI implementation forthcoming. | (Upcoming UI spec) |
-| 21 | Shared UI component library | Extract reusable cards, tables, collapsibles, and chart wrappers. | ⏳ Pending – to follow core screen builds. | [Theming & Motion Framework](./theming_motion_framework.md) |
-| 22 | Validation, guidance, & analytics | Enforce input rules, contextual help, and telemetry across the app. | ⏳ Pending – to be implemented after core flows. | [Flow-Specific UX Interactions](./flow_specific_ux_interactions.md) |
+| 17 | Individual micro model screen | Translate individual strategy table, forecasts, comparisons, and charts. | ✅ Completed – blueprint documented. | [Individual Micro Model Screen Blueprint](./individual_micro_model_screen.md) |
+| 18 | Corporate micro model screen | Deliver treasury strategy inputs, results tables, and visualization suite. | ✅ Completed – blueprint documented. | [Corporate Micro Model Screen Blueprint](./corporate_micro_model_screen.md) |
+| 19 | Institution micro model screen | Implement portfolio assumptions, annual results, and chart trio. | ✅ Completed – blueprint documented. | [Institution Micro Model Screen Blueprint](./institution_micro_model_screen.md) |
+| 20 | Nation-state model screens | Build indebted, wealthy, and US nation experiences with fiscal levers and charts. | ✅ Completed – blueprint documented. | [Nation-State Model Screens Blueprint](./nation_state_model_screens.md) |
+| 21 | Shared UI component library | Extract reusable cards, tables, collapsibles, and chart wrappers. | ✅ Completed – component library blueprint published. | [Shared UI Component Library Blueprint](./shared_ui_component_library.md) |
+| 22 | Validation, guidance, & analytics | Enforce input rules, contextual help, and telemetry across the app. | ✅ Completed – validation & analytics blueprint documented. | [Validation, Guidance, & Analytics Blueprint](./validation_guidance_analytics.md) |
 
 > **Note:** Items marked "Upcoming" will receive dedicated implementation briefs as the project advances. Until then, use this
 table to track sequencing, dependencies, and ownership discussions.
