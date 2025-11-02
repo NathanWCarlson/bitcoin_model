@@ -1,11 +1,13 @@
 {
-  "extends": "@bitcoin24/config/tsconfig/base.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": false,
+    "noEmit": true,
+    "plugins": [{ "name": "next" }],
+    "types": ["node", "react", "react-dom"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
