@@ -33,6 +33,18 @@ Bitcoin24 does not model Bitcoin's volatility, as its volatility profile has evo
 > 6. <a href="https://github.com/user-attachments/assets/6cc536b6-9087-4231-993b-b1a42477b2ae">Bitcoin24 - Nation State</a>
 > 7. <a href="https://github.com/user-attachments/assets/37aab46f-a840-4aed-a48d-8179f1b48d50">Bitcoin24 - United States</a>
 <br>
+
+### Strategy Options
+<table style="background-color: orange;">
+  <tr>
+    <th>Normie</th>
+    <th>BTC 10%</th>
+    <th>BTC Maxi</th>
+    <th>Double Maxi</th>
+    <th>Triple Maxi</th>
+  </tr>
+</table>
+
 <br>
 <br>
 
@@ -51,15 +63,6 @@ Bitcoin24 does not model Bitcoin's volatility, as its volatility profile has evo
   - [docs/route_guarding_navigation.md](docs/route_guarding_navigation.md) – protected routing and global navigation (task 9).
   - [docs/guided_model_flow.md](docs/guided_model_flow.md) – guided BTC → Macro → model experience (task 10).
 
-<table style="background-color: orange;">
-  <tr>
-    <th>Normie</th>
-    <th>BTC 10%</th>
-    <th>BTC Maxi</th>
-    <th>Double Maxi</th>
-    <th>Triple Maxi</th>
-  </tr>
-</table>
 
 
 
