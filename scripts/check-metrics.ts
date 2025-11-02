@@ -1,10 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 
+type MetricDirection = "max" | "min";
+
 interface MetricBudget {
   unit: string;
   threshold: number;
   description: string;
+  direction?: MetricDirection;
 }
 
 interface MetricMap {
@@ -56,9 +59,17 @@ for (const [snapshotKey, sloKey] of comparisons) {
     continue;
   }
 
-  if (value > sloConfig.threshold) {
+  const direction: MetricDirection = sloConfig.direction ?? "max";
+
+  if (direction === "max" && value > sloConfig.threshold) {
     failures.push(
       `${String(snapshotKey)} value ${value} ${sloConfig.unit} exceeds threshold ${sloConfig.threshold} (${sloConfig.description})`
+    );
+  }
+
+  if (direction === "min" && value < sloConfig.threshold) {
+    failures.push(
+      `${String(snapshotKey)} value ${value} ${sloConfig.unit} is below threshold ${sloConfig.threshold} (${sloConfig.description})`
     );
   }
 }
