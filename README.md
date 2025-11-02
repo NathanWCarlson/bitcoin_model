@@ -72,3 +72,21 @@ Bitcoin24 does not model Bitcoin's volatility, as its volatility profile has evo
 
 
 
+
+## Monorepo structure
+
+This repository is organized as a pnpm workspace powered by TurboRepo. Key packages include:
+
+- `apps/web` – Next.js front end consuming shared UI components and model helpers.
+- `apps/api` – Fastify service exposing scenario endpoints that mirror the workbook defaults.
+- `packages/models` – TypeScript domain library that progressively replaces workbook formulas.
+- `packages/ui` – Shared component library, styled with Tailwind CSS using the shared config.
+- `packages/config` – Centralized ESLint, Prettier, Tailwind, and TypeScript base settings.
+
+### Developer tooling
+
+- `pnpm install` bootstraps the entire workspace.
+- `pnpm dev` runs all development targets via Turbo (web + API).
+- `pnpm lint` / `pnpm test` / `pnpm build` fan out to each package.
+- Husky + lint-staged enforce formatting and lint rules on every commit.
+- Playwright, Vitest, and Jest provide e2e, component, and API test harnesses respectively.
